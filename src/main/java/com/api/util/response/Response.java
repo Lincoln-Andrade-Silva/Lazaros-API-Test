@@ -1,4 +1,4 @@
-package com.kanban.util.response;
+package com.api.util.response;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.Data;

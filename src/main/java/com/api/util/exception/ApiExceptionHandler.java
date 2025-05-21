@@ -1,4 +1,4 @@
-package com.kanban.util.exception;
+package com.api.util.exception;
 
 import jakarta.servlet.http.HttpServletResponse;
 import org.slf4j.Logger;

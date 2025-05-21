@@ -1,4 +1,4 @@
-package com.kanban.util.request;
+package com.api.util.request;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

@@ -1,4 +1,4 @@
-package com.kanban.util.exception;
+package com.api.util.exception;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -11,7 +11,7 @@ import java.util.Optional;
 @Data
 @NoArgsConstructor
 public class ApplicationErrorResponse {
-    private static final String COM_API = "com.kanban.";
+    private static final String COM_API = "com.api.";
 
     private int status;
     private String title;

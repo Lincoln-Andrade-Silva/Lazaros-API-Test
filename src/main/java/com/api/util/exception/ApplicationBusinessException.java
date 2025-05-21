@@ -1,4 +1,4 @@
-package com.kanban.util.exception;
+package com.api.util.exception;
 
 import lombok.Getter;
 import lombok.Setter;
