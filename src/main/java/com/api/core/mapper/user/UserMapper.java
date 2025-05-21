@@ -1,5 +1,6 @@
 package com.api.core.mapper.user;
 
+import com.api.core.domain.dto.GenericDTO;
 import com.api.core.domain.dto.user.UserRequest;
 import com.api.core.domain.dto.user.UserResponse;
 import com.api.core.domain.model.Profile;
@@ -23,7 +24,9 @@ public class UserMapper {
         return UserResponse.builder()
                 .id(user.getId())
                 .name(user.getName())
-                .profiles(user.getProfiles().stream().map(Profile::getDescription).toList())
+                .profiles(user.getProfiles().stream()
+                        .map(p -> new GenericDTO(p.getId(), p.getDescription()))
+                        .toList())
                 .build();
     }
 }
