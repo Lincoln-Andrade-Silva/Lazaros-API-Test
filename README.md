@@ -36,3 +36,13 @@ A aplicação utiliza PostgreSQL como banco de dados, e já está pronta para ro
 
 ```bash
 docker-compose up -d
+```
+
+## 📖 Documentação e Testes da API com Swagger
+
+Esta API utiliza o Swagger para documentação interativa e teste dos endpoints de forma fácil e prática.
+
+Você pode acessar a interface do Swagger UI para visualizar todos os endpoints disponíveis, seus parâmetros, e executar chamadas diretamente pelo navegador.
+
+Acesse o Swagger UI em:  
+[http://localhost:8080/swagger-ui/index.html#](http://localhost:8080/swagger-ui/index.html#)
