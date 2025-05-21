@@ -14,6 +14,7 @@ import com.api.util.response.DataListResponse;
 import com.api.util.response.DataResponse;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
@@ -74,6 +75,7 @@ public class UserService implements IUserService {
     }
 
     @Override
+    @Transactional
     public void delete(Long userId) throws ApplicationBusinessException {
         User user = userRepository.findById(userId)
                 .orElseThrow(() -> new ApplicationBusinessException(
@@ -83,6 +85,7 @@ public class UserService implements IUserService {
                         ""
                 ));
 
+        userRepository.deleteUserProfilesByUserId(user.getId());
         userRepository.deleteById(user.getId());
     }
 }
