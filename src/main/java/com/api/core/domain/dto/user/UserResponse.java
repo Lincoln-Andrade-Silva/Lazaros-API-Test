@@ -1,0 +1,14 @@
+package com.api.core.domain.dto.user;
+
+import lombok.Builder;
+import lombok.Data;
+
+import java.util.List;
+
+@Data
+@Builder
+public class UserResponse {
+    private Long id;
+    private String name;
+    private List<String> profiles;
+}
